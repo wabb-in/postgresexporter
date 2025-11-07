@@ -28,7 +28,7 @@ type Config struct {
 	// Timeout
 	TimeoutSettings exporterhelper.TimeoutConfig `mapstructure:",squash"`
 	// Sending queue settings
-	QueueSettings   exporterhelper.QueueConfig   `mapstructure:"sending_queue"`
+	QueueSettings   exporterhelper.QueueBatchConfig   `mapstructure:"sending_queue"`
 }
 
 type DatabaseConfig struct {
