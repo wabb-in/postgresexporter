@@ -11,8 +11,8 @@ import (
 	"go.opentelemetry.io/collector/confmap/xconfmap"
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 
-	"github.com/destrex271/postgresexporter/internal"
-	"github.com/destrex271/postgresexporter/internal/metadata"
+	"github.com/wabb-in/postgresexporter/internal"
+	"github.com/wabb-in/postgresexporter/internal/metadata"
 )
 
 func TestLoadConfig(t *testing.T) {

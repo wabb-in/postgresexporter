@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/destrex271/postgresexporter/internal"
+	"github.com/wabb-in/postgresexporter/internal"
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/exporter"
 	"go.opentelemetry.io/collector/pdata/pmetric"

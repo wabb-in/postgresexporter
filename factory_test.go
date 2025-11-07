@@ -9,7 +9,7 @@ import (
 	"go.opentelemetry.io/collector/component/componenttest"
 	"go.opentelemetry.io/collector/exporter/exportertest"
 
-	"github.com/destrex271/postgresexporter/internal/metadata"
+	"github.com/wabb-in/postgresexporter/internal/metadata"
 )
 
 func TestCreateDefaultConfig(t *testing.T) {

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/destrex271/postgresexporter/internal"
-	"github.com/destrex271/postgresexporter/internal/metadata"
+	"github.com/wabb-in/postgresexporter/internal"
+	"github.com/wabb-in/postgresexporter/internal/metadata"
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/exporter"
 	"go.opentelemetry.io/collector/exporter/exporterhelper"

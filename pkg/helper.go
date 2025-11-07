@@ -4,7 +4,7 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/destrex271/postgresexporter/internal"
+	"github.com/wabb-in/postgresexporter/internal"
 )
 
 const (

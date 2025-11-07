@@ -1,4 +1,4 @@
-module github.com/destrex271/postgresexporter
+module github.com/wabb-in/postgresexporter
 
 go 1.23.6
 

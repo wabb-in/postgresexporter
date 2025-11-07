@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"slices"
 
-	"github.com/destrex271/postgresexporter/internal/db"
+	"github.com/wabb-in/postgresexporter/internal/db"
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/pmetric"
 )

@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("postgres")
-	ScopeName = "github.com/destrex271/postgresexporter"
+	ScopeName = "github.com/wabb-in/postgresexporter"
 )
 
 const (
