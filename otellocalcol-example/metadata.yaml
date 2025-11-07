@@ -1,0 +1,6 @@
+type: otellocalcol-example
+
+status:
+  class: cmd
+  codeowners:
+    active: []

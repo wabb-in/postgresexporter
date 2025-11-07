@@ -1,0 +1,28 @@
+dist:
+  name: otellocalcol-example
+  description: OpenTelemetry Collector Local for tests.
+  version: 1.0.0
+  output_path: ./otellocalcol-example
+
+receivers:
+  - gomod: go.opentelemetry.io/collector/receiver/otlpreceiver v0.139.0
+
+processors:
+  - gomod: go.opentelemetry.io/collector/processor/batchprocessor v0.139.0
+  - gomod: go.opentelemetry.io/collector/processor/memorylimiterprocessor v0.139.0
+
+exporters:
+  - gomod: go.opentelemetry.io/collector/exporter/debugexporter v0.139.0
+  - gomod: github.com/wabb-in/postgresexporter main
+    # path: "./" # if you have repo locally
+
+providers:
+  - gomod: go.opentelemetry.io/collector/confmap/provider/envprovider v1.28.0
+  - gomod: go.opentelemetry.io/collector/confmap/provider/fileprovider v1.28.0
+  - gomod: go.opentelemetry.io/collector/confmap/provider/httpprovider v1.28.0
+  - gomod: go.opentelemetry.io/collector/confmap/provider/httpsprovider v1.28.0
+  - gomod: go.opentelemetry.io/collector/confmap/provider/yamlprovider v1.28.0
+
+extensions:
+  - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckextension v0.139.0
+  - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension v0.139.0

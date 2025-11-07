@@ -1,0 +1,44 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+      http:
+        endpoint: 0.0.0.0:4318
+
+exporters:
+  debug: {}
+      # verbosity: detailed
+  postgres:
+    database:
+      type: postgresql
+      host: localhost
+      port: 5432
+      username: username
+      password: password
+      database: db
+      schema: otel
+    create_schema: true
+    logs_table_name: otellogs
+    traces_table_name: oteltraces
+
+service:
+  pipelines:
+    logs:
+      receivers:
+        - otlp
+      exporters:
+        - debug
+        - postgres
+    traces:
+      receivers:
+        - otlp
+      exporters:
+        - debug
+        - postgres
+    metrics:
+      receivers:
+        - otlp
+      exporters:
+        - debug
+        - postgres
