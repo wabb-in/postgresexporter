@@ -3,7 +3,7 @@
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/wabb-in/postgresexporter)
 ![GitHub Repo stars](https://img.shields.io/github/stars/wabb-in/postgresexporter)
 
-*Sponsorship and merging the exporter into the OpenTelemetry Collector Contrib project are planned. The discussion is happening in this issue -> https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/35451*
+*Sponsorship and merging the exporter into the OpenTelemetry Collector Contrib project are planned. The discussion is open in this issue -> https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/46501*
 <hr/>
 
 This repository contains an unofficial implementation for an <a href="https://opentelemetry.io/">OpenTelemetry</a> Exporter to export otel logs, traces and metrics to PostgreSQL or other databases built on top of PostgreSQL.
